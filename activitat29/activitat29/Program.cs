@@ -27,7 +27,7 @@ namespace MyApplication
 
             for(int i = 0; i < jaggedArr.Length; i++)
             {
-                Console.Write("Fila: ");
+                Console.Write($"Fila {i}: ");
                 for(int j = 0; j < jaggedArr[i].Length; j++)
                 {
                     Console.Write(jaggedArr[i][j] + " ");

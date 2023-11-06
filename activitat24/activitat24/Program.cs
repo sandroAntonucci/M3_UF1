@@ -46,7 +46,7 @@ namespace MyApplication
                 }
             }
 
-            Console.WriteLine("L'" + userInfo[0] + " " + userInfo[1] + " té " + userInfo[2] + " anys.");
+            Console.WriteLine($"L'{userInfo[0]} {userInfo[1]} té {userInfo[2]} anys.");
 
 
             Console.WriteLine(MsgEnd);
