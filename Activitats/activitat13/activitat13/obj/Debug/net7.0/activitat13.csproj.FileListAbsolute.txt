@@ -1,0 +1,15 @@
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\bin\Debug\net7.0\activitat13.exe
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\bin\Debug\net7.0\activitat13.deps.json
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\bin\Debug\net7.0\activitat13.runtimeconfig.json
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\bin\Debug\net7.0\activitat13.dll
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\bin\Debug\net7.0\activitat13.pdb
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.csproj.AssemblyReference.cache
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.AssemblyInfoInputs.cache
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.AssemblyInfo.cs
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.dll
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\refint\activitat13.dll
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.pdb
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\activitat13.genruntimeconfig.cache
+D:\SandroA\M3\UF1\Activitats\activitat13\activitat13\obj\Debug\net7.0\ref\activitat13.dll
