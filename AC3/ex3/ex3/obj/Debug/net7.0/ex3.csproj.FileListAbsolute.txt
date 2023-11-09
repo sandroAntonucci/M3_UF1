@@ -1,0 +1,14 @@
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\bin\Debug\net7.0\ex3.exe
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\bin\Debug\net7.0\ex3.deps.json
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\bin\Debug\net7.0\ex3.runtimeconfig.json
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\bin\Debug\net7.0\ex3.dll
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\bin\Debug\net7.0\ex3.pdb
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.AssemblyInfoInputs.cache
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.AssemblyInfo.cs
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.csproj.CoreCompileInputs.cache
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.dll
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\refint\ex3.dll
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.pdb
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ex3.genruntimeconfig.cache
+C:\Users\tboi5\Desktop\M3\M3_UF1\AC3\ex3\ex3\obj\Debug\net7.0\ref\ex3.dll
