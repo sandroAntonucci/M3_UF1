@@ -20,6 +20,8 @@ namespace MyApplication
             const string MsgNum = "Introdueix un nombre enter: ";
             const string MsgEnd = "\nPrem una tecla per continuar.";
 
+            int odd = 0;
+
             string num;
 
             Console.Write(MsgNum);
@@ -27,10 +29,21 @@ namespace MyApplication
 
             int[] nums = new int[num.Length];
 
-            for (int i =  ; i < nums.Length; i++)
+            if (num.Length % 2 == 1) odd = 1;
+
+            for (int i = num.Length-1; i > 0; i--)
             {
-                nums[i] = num[i];
+                if((i  + odd) % 2 == 0)
+                {
+                    nums[i] = Convert.ToInt32(num[i]);
+                }
+                else
+                {
+                    nums[i] = Convert.ToInt32(num[i]) * 2;
+                }
             }
+
+            foreach (int i in nums) Console.Write(i); 
 
             Console.WriteLine(MsgEnd);
             Console.ReadKey();
