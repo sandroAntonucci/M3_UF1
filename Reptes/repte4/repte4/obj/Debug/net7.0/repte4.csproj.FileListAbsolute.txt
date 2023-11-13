@@ -1,0 +1,15 @@
+D:\SandroA\M3\UF1\repte4\repte4\bin\Debug\net7.0\repte4.exe
+D:\SandroA\M3\UF1\repte4\repte4\bin\Debug\net7.0\repte4.deps.json
+D:\SandroA\M3\UF1\repte4\repte4\bin\Debug\net7.0\repte4.runtimeconfig.json
+D:\SandroA\M3\UF1\repte4\repte4\bin\Debug\net7.0\repte4.dll
+D:\SandroA\M3\UF1\repte4\repte4\bin\Debug\net7.0\repte4.pdb
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.csproj.AssemblyReference.cache
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.GeneratedMSBuildEditorConfig.editorconfig
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.AssemblyInfoInputs.cache
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.AssemblyInfo.cs
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.csproj.CoreCompileInputs.cache
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.dll
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\refint\repte4.dll
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.pdb
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\repte4.genruntimeconfig.cache
+D:\SandroA\M3\UF1\repte4\repte4\obj\Debug\net7.0\ref\repte4.dll
