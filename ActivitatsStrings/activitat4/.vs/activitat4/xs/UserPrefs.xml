@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{FF1BA554-9AC2-4264-91CD-4D9B79077441}|Default">
+  <MonoDevelop.Ide.ItemProperties.activitat4 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="activitat4/Program.cs">
+    <Files>
+      <File FileName="activitat4/Program.cs" Line="36" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="activitat4" expanded="True">
+            <Node name="activitat4">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
