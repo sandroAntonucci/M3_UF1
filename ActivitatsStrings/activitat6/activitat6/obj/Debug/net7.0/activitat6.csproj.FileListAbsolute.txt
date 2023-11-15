@@ -1,0 +1,15 @@
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/bin/Debug/net7.0/activitat6
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/bin/Debug/net7.0/activitat6.deps.json
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/bin/Debug/net7.0/activitat6.runtimeconfig.json
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/bin/Debug/net7.0/activitat6.dll
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/bin/Debug/net7.0/activitat6.pdb
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.csproj.AssemblyReference.cache
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.AssemblyInfoInputs.cache
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.AssemblyInfo.cs
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.csproj.CoreCompileInputs.cache
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.dll
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/refint/activitat6.dll
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.pdb
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/activitat6.genruntimeconfig.cache
+/Users/sandro/Documents/GitHub/M3_UF1/ActivitatsStrings/activitat6/activitat6/obj/Debug/net7.0/ref/activitat6.dll
