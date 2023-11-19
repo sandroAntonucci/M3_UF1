@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tboi5\\.nuget\\packages\\": {}
+    "/Users/sandro/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj",
+      "projectUniqueName": "/Users/sandro/Documents/GitHub/M3_UF1/PR2/penjat/penjat/penjat.csproj",
       "projectName": "penjat",
-      "projectPath": "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj",
-      "packagesPath": "C:\\Users\\tboi5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\obj\\",
+      "projectPath": "/Users/sandro/Documents/GitHub/M3_UF1/PR2/penjat/penjat/penjat.csproj",
+      "packagesPath": "/Users/sandro/.nuget/packages/",
+      "outputPath": "/Users/sandro/Documents/GitHub/M3_UF1/PR2/penjat/penjat/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tboi5\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/sandro/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
       }
     }
   }
