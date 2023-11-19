@@ -1,0 +1,15 @@
+C:\Users\argo\Desktop\exercici5\exercici5\bin\Debug\net7.0\exercici5.exe
+C:\Users\argo\Desktop\exercici5\exercici5\bin\Debug\net7.0\exercici5.deps.json
+C:\Users\argo\Desktop\exercici5\exercici5\bin\Debug\net7.0\exercici5.runtimeconfig.json
+C:\Users\argo\Desktop\exercici5\exercici5\bin\Debug\net7.0\exercici5.dll
+C:\Users\argo\Desktop\exercici5\exercici5\bin\Debug\net7.0\exercici5.pdb
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.csproj.AssemblyReference.cache
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.AssemblyInfoInputs.cache
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.AssemblyInfo.cs
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.csproj.CoreCompileInputs.cache
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.dll
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\refint\exercici5.dll
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.pdb
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\exercici5.genruntimeconfig.cache
+C:\Users\argo\Desktop\exercici5\exercici5\obj\Debug\net7.0\ref\exercici5.dll
