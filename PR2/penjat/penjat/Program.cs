@@ -24,7 +24,7 @@ namespace MyApplication
             const string MsgDifficultiesList = "\t\tA. Fácil\n\t\tB. Normal\n\t\tC. Difícil\n\t\tD. Experto";
             const string MsgDifficultyChosen = "\n\t\t¡Has escogido el nivel de dificultad {0}! ";
             const string MsgText = "Introduce un texto para escoger una palabra: ";
-            const string MsgContinue = "\nPulsa una tecla para continuar.";
+            const string MsgContinue = "\n\t\tPulsa una tecla para continuar.";
 
             int difficultyTries = 3, textTries = 3, tries;
 
@@ -35,7 +35,7 @@ namespace MyApplication
             Console.WriteLine(MsgWelcome);
 
 
-            //Do while para comprovar que el valor sea válido con un máximo de 3 intentos
+            //Do while para mostrar un menú y comprovar que la entrada sea válida con un máximo de 3 intentos
             do
             {
 
@@ -116,9 +116,11 @@ namespace MyApplication
                 } while (text == "" && textTries > 0);
             }
 
-            //Separa cada palabra en un array
-            string[] words = text.Split(' ');
+            //Se quitan los acentos
+            text = text.Replace("á", "a").Replace("é", "e").Replace("í", "i").Replace("ó", "o").Replace("ú", "u").Replace("Á", "A").Replace("É", "E").Replace("Í", "I").Replace("Ó", "O").Replace("Ú", "U");
 
+            //Separa cada palabra en un array
+            string[] words = text.Split(' '); 
 
             //S'ordena l'array de menor a major
             for(int i = 0; i < words.Length - 1; i++)
