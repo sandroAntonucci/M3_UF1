@@ -1,4 +1,4 @@
-﻿*Author: Sandro Antonucci Rejón
+﻿/*Author: Sandro Antonucci Rejón
  * M03. Programació UF1
  * v1. 13/11/2023
  * PR2. En aquesta pràctica, creareu la nostra versió de “El joc del Penjat”, on l’usuari haurà d’endevinar la paraula escollida pel programa, segons el nivell de dificultat.
@@ -16,21 +16,42 @@ namespace MyApplication
         {
 
             const string MsgInput = "\n>> ";
-            const string MsgNotValid = "Aquesta entrada no es válida";
+            const string MsgNotValid = "Esta entrada no es válida";
             const string MsgOutOfTries = "Te has quedado sin intentos. !Adiós!";
             const string MsgWelcome = "\t\t\t******************************\n\t\t\t****Bienvenid@ al ahorcado****\n\t\t\t******************************";
             const string MsgDifficulty = "\n\t\tPor favor, escoge el nivel de dificultad: \n\n";
             const string MsgDifficultiesList = "\t\tA. Fácil\n\t\tB. Normal\n\t\tC. Difícil\n\t\tD. Experto";
             const string MsgDifficultyChosen = "\n\t\t¡Has escogido el nivel de dificultad {0}! ";
             const string MsgText = "\t\tIntroduce un texto para escoger una palabra: ";
-            const string MsgTries = "\tNúmero de intentos restantes: {0}";
+            const string MsgGuess = "\tIntroduce una letra (vocal o consonante): ";
+            const string MsgTries = "\tNúmero de intentos restantes: {0}\n";
+            const string MsgLetterAlreadyGuessed = "\n\n\tYa has introducido esta letra. Pierdes un intento.";
+            const string MsgLetterNotInWord = "\n\n\t{0} no se encuentra en la palabra. Pierdes un intento.";
+            const string MsgLetterInWord = "\n\n\t¡{0} se encuentra en la palabra!";
             const string MsgContinue = "\n\t\tPulsa una tecla para continuar.";
+            const string MsgWon = "\n¡Has ganado! - La palabra era {0}";
+            const string MsgLost = "\nHas perdido :( - La palabra era {0}";
 
-            int difficultyTries = 3, textTries = 3, tries;
 
-            string difficulty = "", text = "", hangmanWord;
+            //Frames del ahorcado
 
-            bool gameLost = false, wordFound = false;
+            const string HangmanZero = " +---+\n     |\n     |\n     |\n     |\n     |\n==========\n";
+            const string HangmanOne = " +---+\n |   |\n     |\n     |\n     |\n     |\n==========\n";
+            const string HangmanTwo = " +---+\n |   |\n O   |\n     |\n     |\n     |\n==========\n";
+            const string HangmanThree = " +---+\n |   |\n O   |\n |   |\n     |\n     |\n==========\n";
+            const string HangmanFour = " +---+\n |   |\n O   |\n/|   |\n     |\n     |\n==========\n";
+            const string HangmanFive = " +---+\n |   |\n O   |\n/|\\  |\n     |\n     |\n==========\n";
+            const string HangmanSix = " +---+\n |   |\n O   |\n/|\\  |\n/    |\n     |\n==========\n";
+            const string HangmanSeven = " +---+\n |   |\n O   |\n/|\\  |\n/ \\  |\n     |\n==========\n";
+
+
+            int difficultyTries = 3, textTries = 3, tries = 0;
+
+            string difficulty = "", text = "", lettersGuessed = "", hangmanWord = "", alphabet = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+
+            char letter = '\0';
+
+            bool wordFound = false, letterFound = false;
 
             //Intro - Bienvenido al ahorcado
             Console.ForegroundColor = ConsoleColor.Green;
@@ -111,6 +132,13 @@ namespace MyApplication
 
                 do
                 {
+
+                    //Informa al usuario en caso de error
+                    if(textTries < 3)
+                    {
+                        Console.Write(MsgNotValid);
+                    }
+
                     Console.WriteLine(MsgText);
                     Console.ForegroundColor = ConsoleColor.Magenta;
                     Console.Write(MsgInput);
@@ -144,33 +172,25 @@ namespace MyApplication
             switch (difficulty)
             {
 
-
                 //Modo Fácil - Se escoge la palabra más corta del texto
                 case "a":
 
                     tries = 7;
-
-                    hangmanWord = words[0];
-
-
+                    hangmanWord = words[0].ToUpper();
                     break;
 
                 //Modo Normal - Se escoge la última palabra del primer cuarto del texto ordenado por longitud (dividimos la longitud del array por 4)
                 case "b":
 
                     tries = 5;
-
-                    hangmanWord = words[words.Length / 4];
-
+                    hangmanWord = words[words.Length / 4].ToUpper();
                     break;
 
                 //Modo Difícil - Se escoge la primera palabra de la segunda mitad del texto ordenado por longitud (dividimos la longitud del array por 2)
                 case "c":
 
                     tries = 4;
-
-                    hangmanWord = words[words.Length / 2];
-
+                    hangmanWord = words[words.Length / 2].ToUpper();
                     break;
 
 
@@ -178,20 +198,172 @@ namespace MyApplication
                 case "d":
 
                     tries = 3;
-
-                    hangmanWord = words[words.Length - 1];
-
+                    hangmanWord = words[words.Length - 1].ToUpper();
                     break;
 
             }
 
+            char[] hangmanGuessed = new char[hangmanWord.Length];
+
+            //For para substituir por _ todos los carácteres a adivinar por el usuario en una array de carácteres
+            for(int i = 0; i < hangmanWord.Length; i++) 
+            {
+                hangmanGuessed[i] = '_';
+            }
+
+            //While para indicar cada ronda que acaba si el usuario se queda sin intentos o adivina la palabra
+
+            while (tries > 0 && !wordFound)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine(MsgTries, tries);
+
+                //For que imprime todas las letras, marca en rojo las incorrectas introducidas y en verde las correctas introducidas. También introduce un salto de línea en la letra I y Q
+
+                foreach (char i in alphabet)
+                {
+
+                    //Si la letra está dentro de las que ha introducido el usuario, se comprueba si es correcta o incorrecta y cambia el color
+                    if (lettersGuessed.Contains(i))
+                    {
+                        if (hangmanWord.Contains(i))
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        }
+                    }
+                    //Si el usuario no la ha introducido aún, la marca en blanco
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
 
 
+                    Console.Write(i + " ");
+                    if (i == 'I' || i == 'Q') Console.WriteLine();
+
+                }
+
+                Console.WriteLine("\n\n\t");
+
+                foreach (char i in hangmanGuessed) Console.Write(i + " ");
+
+                Console.WriteLine("\n\n");
+
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                //Switch per a dibuixar diferents estats del hangman depenent dels intents restants (a nivells difícils ja comença mig colgat)
+                switch (tries)
+                {
+                    case 7:
+                        Console.WriteLine(HangmanZero);
+                        break;
+
+                    case 6:
+                        Console.WriteLine(HangmanOne);
+                        break;
+
+                    case 5:
+                        Console.WriteLine(HangmanTwo);
+                        break;
+
+                    case 4:
+                        Console.WriteLine(HangmanThree);
+                        break;
+
+                    case 3:
+                        Console.WriteLine(HangmanFour);
+                        break;
+
+                    case 2:
+                        Console.WriteLine(HangmanFive);
+                        break;
+
+                    case 1:
+                        Console.WriteLine(HangmanSix);
+                        break;
+                }
+
+
+                //Recoge una letra introducida por el usuario
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(MsgGuess);
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write(MsgInput);
+                
+                letter = Convert.ToChar(Console.ReadLine());
+                letter = char.ToUpper(letter);
+
+
+                //Si la letra ya ha sido introducida antes, informa al usuario y resta un intento, si no, se comprueba que esté en la palabra a adivinar
+                if (lettersGuessed.Contains(letter))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(MsgLetterAlreadyGuessed);
+                    tries--;
+                }
+                else 
+                {
+                    //Se recorre toda la palabra para comprobar si la letra coincide
+                    for(int i = 0; i < hangmanWord.Length; i++)
+                    {
+                        if (hangmanWord[i] == letter)
+                        {
+                            hangmanGuessed[i] = letter;
+                            letterFound = true;
+                        }
+                    }
+                }
+
+                //Si no se ha encontrado una letra, resta un intento y informa al usuario
+                if (!letterFound && !(lettersGuessed.Contains(letter)))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(MsgLetterNotInWord, letter);
+                    tries--;
+                }
+                else if(!(lettersGuessed.Contains(letter)))
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(MsgLetterInWord, letter);
+                }
+
+                lettersGuessed += letter;
+                letterFound = false;
+                letter = '\0';
+
+                //Si la palabra adivinada por el usuario no contiene _ significa que ya no hay letras a adivinar y ha ganado el juego
+                if (!hangmanGuessed.Contains('_')) wordFound = true;
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(MsgContinue);
+                Console.ReadKey();
+
+            }
+
+            Console.Clear();
+
+            //Informa al usuario si ha ganado o ha perdido
+            if (wordFound)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(MsgWon, hangmanWord);
+            }
+            else
+            {
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(HangmanSeven);
+                Console.WriteLine(MsgLost, hangmanWord);
+            }
 
             Console.WriteLine(MsgContinue);
             Console.ReadKey();
 
         }
     }
-
 }
