@@ -146,38 +146,41 @@ namespace MyApplication
             switch (difficulty){
 
 
-                //Modo Fácil
+                //Modo Fácil - Se escoge la palabra más corta del texto
                 case "a":
 
                     tries = 7;
-                    
+
+                    hangmanWord = words[0];
 
 
                     break;
-
-                //Modo Normal
+                    
+                //Modo Normal - Se escoge la última palabra del primer cuarto del texto ordenado por longitud (dividimos la longitud del array por 4)
                 case "b":
 
                     tries = 5;
 
-
+                    hangmanWord = words[words.Length / 4];
 
                     break;
 
-                //Modo Difícil
+                //Modo Difícil - Se escoge la primera palabra de la segunda mitad del texto ordenado por longitud (dividimos la longitud del array por 2)
                 case "c":
 
                     tries = 4;
 
+                    hangmanWord = words[words.Length / 2];
 
                     break;
 
 
-                //Modo Experto
+                //Modo Experto - Se escoge la palabra más larga del texto
                 case "d":
 
                     tries = 3;
 
+                    hangmanWord = words[words.Length-1];
 
                     break;
 
