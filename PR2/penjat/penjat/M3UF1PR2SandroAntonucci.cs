@@ -10,7 +10,7 @@ using System;
 
 namespace MyApplication
 {
-    class Hangman
+    class M3UF1PR2SandroAntonucci
     {
         static void Main()
         {
@@ -153,7 +153,7 @@ namespace MyApplication
             //Separa cada palabra en un array
             string[] words = text.Split(' ');
 
-            //S'ordena l'array de menor a major
+            //Se ordena el array de menor a mayor
             for (int i = 0; i < words.Length - 1; i++)
             {
                 for (int j = i + 1; j < words.Length; j++)
@@ -247,7 +247,8 @@ namespace MyApplication
                     if (i == 'I' || i == 'Q') Console.WriteLine();
 
                 }
-
+                
+                //Imprime la palabra con las letras adivinadas por el jugador
                 Console.WriteLine("\n\n\t");
 
                 foreach (char i in hangmanGuessed) Console.Write(i + " ");
@@ -256,7 +257,8 @@ namespace MyApplication
 
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                //Switch per a dibuixar diferents estats del hangman depenent dels intents restants (a nivells difícils ja comença mig colgat)
+
+                //Switch para dibujar diferentes frames del dibujo dependiendo de los intentos restantes (si escoge niveles difíciles empezará ya medio colgado)
                 switch (tries)
                 {
                     case 7:
@@ -347,7 +349,7 @@ namespace MyApplication
 
             Console.Clear();
 
-            //Informa al usuario si ha ganado o ha perdido
+            //Informa al usuario si ha ganado o ha perdido y si pierde dibuja el hangman entero
             if (wordFound)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
