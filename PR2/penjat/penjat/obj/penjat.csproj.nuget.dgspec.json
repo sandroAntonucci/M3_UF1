@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj": {}
+    "D:\\SandroA\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj": {
+    "D:\\SandroA\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj",
+        "projectUniqueName": "D:\\SandroA\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj",
         "projectName": "penjat",
-        "projectPath": "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj",
-        "packagesPath": "C:\\Users\\tboi5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tboi5\\Desktop\\M3\\M3_UF1\\PR2\\penjat\\penjat\\obj\\",
+        "projectPath": "D:\\SandroA\\M3\\M3_UF1\\PR2\\penjat\\penjat\\penjat.csproj",
+        "packagesPath": "C:\\Users\\argo\\.nuget\\packages\\",
+        "outputPath": "D:\\SandroA\\M3\\M3_UF1\\PR2\\penjat\\penjat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tboi5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\argo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
